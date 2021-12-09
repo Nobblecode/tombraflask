@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>LOGIN</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color: rgb(164, 196, 255);">
+  
+
+    <center style="margin-top: 120px;">
+
+        <center>  <h1>ADD A PERSON</h1></center>
+
+    
+<form action="/addperson" method="POST">
+
+ <input type="text" name="first_name" value="" placeholder="first_name" style="height:60px; border-radius: 20px; width: 300px; padding: 10px;">
+ <br><br>
+ <input type="text" name="second_name" value="" placeholder="second_name" style="height:60px; border-radius: 20px; width: 300px; padding: 10px;">
+ <br><br>
+ <input type="text" name="gender" value="" placeholder="gender" style="height:60px; border-radius: 20px; width: 300px; padding: 10px;">
+ <br><br>
+ <input type="text" name="tradition" value="" placeholder="tradition" style="height:60px; border-radius: 20px; width: 300px; padding: 10px;">
+ <br><br>
+ <input type="text" name="location" value="" placeholder="location" style="height:60px; border-radius: 20px; width: 300px; padding: 10px;">
+ <br><br>
+ <input type="text" name="nationalid" value="" placeholder="nationalid" style="height:60px; border-radius: 20px; width: 300px; padding: 10px;">
+ <br><br>
+ <input type="submit" value="submit">
+
+
+ </form>
+
+</center>
+
+ <!--
+
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Age</th>
+        <th>Details</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+
+    {% for customer in customers %}
+    <tr>
+    <td>{{customer.name}}</td>
+    <td>{{customer.address}}</td>
+    <td>{{customer.age}}</td>
+    <td><a href="{{ url_for( 'customer_details', id=customer.ID)}}">Details</a></td>
+    <td><a href="{{ url_for( 'edit_customer', id=customer.ID)}}">Edit</a></td>
+    <td><a href="{{ url_for( 'delete_customer', id=customer.ID)}}">Delete</a></td>
+    </tr>
+{% endfor %}
+</table>
+
+
+ -->
+
+
+
+
+</body>
+
+</html>
